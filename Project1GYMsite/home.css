@@ -1,0 +1,218 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0px;
+    background: url('f.jpg');
+    background-repeat: no-repeat;
+    background-position: 237px -17px;
+    /* background-color: black; */
+    background-size:contain;
+    /* font-family: 'Lexend', sans-serif; */
+    font-family: 'Luckiest Guy', cursive;
+    height: 1500px;
+    background-color: black;
+
+}
+ .right {
+    position: fixed;
+    display: inline-block;
+    /* border: 2px solid red; */
+    right: 30px;
+    top: 2px;
+}
+
+.right img {
+    height: 70px;
+    filter: invert(100%);
+    /* border: 2px solid rgb(90, 162, 38); */
+}
+
+.right div {
+    font-family: 'Luckiest Guy', cursive;
+    line-height: 0px;
+    font-size: 18px;
+    text-align: center;
+}
+#fusion{
+   color:rgb(90, 162, 38) ;
+}
+
+.left {
+    position: fixed;
+    top: 6px;
+    left: 50px;
+    display: block;
+    width: 35%;
+    margin: 22px auto;
+    
+
+    /* border: 2px solid green; */
+
+}
+
+.bottom {
+    position: absolute;
+    bottom: 18px;
+    right: 10px;
+    display: inline-block;
+    /* border: 2px solid blue; */
+    position: fixed;
+
+}
+
+.btnA {
+    color: white;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: 'Luckiest Guy', cursive;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border-color: rgb(90, 162, 38);
+    cursor: pointer;
+
+}
+
+.btnA:hover {
+    color: rgb(90, 162, 38);
+    border-color: #fff;
+    /* color: white; */
+}
+
+.btnB {
+    color: white;
+    font-size: 14px;
+    font-family: 'Luckiest Guy', cursive;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: rgb(90, 162, 38);
+    border-color: rgb(90, 162, 38);
+    cursor: pointer;
+
+}
+
+.btnB:hover {
+    background-color: transparent;
+    color: white;
+}
+
+nav {
+    background-color: transparent;
+    border: transparent;
+    font-size: 16px;
+
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+    padding: 6px 20px;
+    border-radius: 8px;
+    border: green;
+
+}
+
+nav a:hover{
+    background-color: transparent;
+    border: 2px solid rgb(90, 162, 38);        
+    border-radius: 8px;
+    color: white;
+}
+nav a.active {
+    background-color: rgb(90, 162, 38);
+    border: 2px solid rgb(90, 162, 38);        
+    border-radius: 8px;
+    color: white;
+}
+
+.main {
+    margin-top: 250px;
+    margin-left: 50px;
+
+}
+
+.main .text {
+    position: relative;
+    font-size: 80px;
+    font-weight: 600;
+    /* margin-top: 250px; */
+    color: rgb(90, 162, 38);
+}
+
+.main .text.first-text {
+    color: white;
+}
+
+.text.sec-text::after {
+    content:'|';
+    position: absolute;
+    animation: blink 1s infinite     
+
+}
+
+@keyframes blink {
+0% {
+opacity: 0;
+}
+50% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+
+
+#p2 {
+    margin-left: 50px;
+}
+
+.btn2 {
+    color: white;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: 'Luckiest Guy', cursive;
+    padding: 5px 10px;
+    border: 2px solid rgb(90, 162, 38);
+    border-radius: 8px;
+    margin-left: 50px;
+    cursor: pointer;
+    bottom: 0;
+
+}
+
+.btn2:hover {
+    background-color: rgb(90, 162, 38);
+    color: white;
+}
+.content{
+   margin-top: 850px;
+   margin-left: 350px;
+   padding: 20px;
+
+}
+.box1{
+    display: inline-block;
+    border: 2px solid red;
+    height: 200px;
+    width: 200px;
+}
+.box2{
+    display: inline-block;
+    border: 2px solid red;
+    height: 200px;
+    width: 200px;
+}
+.box3{
+    display: inline-block;
+    border: 2px solid red;
+    height: 200px;
+    width: 200px;
+}
+.box4{
+    display: inline-block;
+    border: 2px solid red;
+    height: 200px;
+    width: 200px;
+}

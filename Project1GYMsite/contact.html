@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="container">
+        <span class="text first-text"><strong>NO</strong></span>
+        <span class="text sec-text"><strong>Pain.</strong></span>
+    </div>
+    <script>
+        const text = document.querySelector(".sec-text");
+        
+        const textLoad = () => {
+            let index = 0;
+            const words = ["Pain.", "Gain."];
+            setInterval(() => {
+                text.textContent = words[index];
+                index = (index + 1) % words.length;
+            }, 3000);
+        };
+        textLoad();
+    </script>
+     <header class="header">
+
+        <div class="right">
+            <a href="home.html"><img src="logo.png" alt=""></a>
+            <div><span id="fit"><strong>Fit</strong></span>
+            <span id="fusion"><strong>Fusion</strong></span>
+                     
+            </div>
+        </div>
+
+        <div class="left">
+            <nav><strong>
+                    <a href="home.html">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Fitness</a>
+                    <a href="#">Diet</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <nav>
+                </strong>
+        </div>
+    </header>
+    <div class="menu">
+        <button>
+        <label for="name">Name</label>
+        <div>
+            <input type="text" id="myname">
+        </div>
+         <br>
+        <label for="mynumber">Contact Number</label>
+        <div>
+            <input type="number" id="mynumber">
+        </div>
+        <br>
+         <label for="email">Email</label>
+        <div>
+            <input type="email" id="myemail">
+        </div>
+        <br>
+        <label for="DOB">DOB</label>
+        <div>
+            <input type="date" name="mydate">
+        </div>
+        </button>
+    </div>
+
+    <footer>
+        <div class="bottom">
+           <button class="btnA">Call Us Now</button>
+           <button class="btnB">SignIn</button>
+        </div>
+    </footer>
+</body>
+
+</html>
