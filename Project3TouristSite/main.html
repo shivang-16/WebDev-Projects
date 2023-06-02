@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JourneyQuest</title>
     <link rel="stylesheet" href="main.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
     <link
@@ -102,25 +103,26 @@
             <h1 id="heading1">Famous <span id="quest">Tourist</span> Places</h1>
         </div>
         <div class="contentbox">
-          <button id="leftbtn"> < </button>
+            <button id="leftbtn"> < </button>
 
                     <div class="contentimg">
-                        <a href="https://en.wikipedia.org/wiki/Tokyo_Tower" target="blank"><img src="img/img1.jpg" alt="">
+                        <a href="https://en.wikipedia.org/wiki/Tokyo_Tower" target="blank"><img src="img/img1.jpg"
+                                alt="">
                             <span class="tour">TokyoTower, London </span><br>
                             <span class="cost">$2500/night</span></a>
                     </div>
                     <div class="contentimg">
                         <a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="blank">
-                        <img src="img/img2.avif" alt="">
-                        <span class="tour">TajMahal, India</span><br>
-                        <span class="cost">$1500/night</span>
+                            <img src="img/img2.avif" alt="">
+                            <span class="tour">TajMahal, India</span><br>
+                            <span class="cost">$1500/night</span>
                         </a>
                     </div>
                     <div class="contentimg">
                         <a href="https://en.wikipedia.org/wiki/Machu_Picchu" target="blank">
-                        <img src="img/img3.jpg" alt="">
-                        <span class="tour">MachuPicchu, Peru </span><br>
-                        <span class="cost">$3500/night</span>
+                            <img src="img/img3.jpg" alt="">
+                            <span class="tour">MachuPicchu, Peru </span><br>
+                            <span class="cost">$3500/night</span>
                         </a>
                     </div>
 
@@ -128,77 +130,21 @@
         </div>
     </section>
 
-    <section id="waterpark">
+    <section id="bestPlace">
         <div>
             <p>Best Places to visit in INDIA <br> this summer
             </p>
             <button>Explore</button>
         </div>
-    
+
     </section>
 
     <section id="third">
 
     </section>
-    <!-- --------JAVA SCRIPT CODE BEGINS HERE------------------------------------------------------------------------------------------------------ -->
-    <script>
-        const homebtn = document.getElementById('home');
-        const homemenu = document.getElementById('homebox');
 
-        homebtn.addEventListener('mouseenter', showhomebox);
-        homebtn.addEventListener('mouseleave', hidehomebox);
-        homemenu.addEventListener('mouseenter', showhomebox);
-        homemenu.addEventListener('mouseleave', hidehomebox);
-        function showhomebox() {
-            homebox.style.display = 'block';
-        }
-        function hidehomebox() {
-            homebox.style.display = 'none';
-        }
+    <script src="main.js"></script>
 
-        const placebtn = document.getElementById('place');
-        const placemenu = document.getElementById('placebox');
-
-        placebtn.addEventListener('mouseenter', showplacebox);
-        placebtn.addEventListener('mouseleave', hideplacebox);
-        placemenu.addEventListener('mouseenter', showplacebox);
-        placemenu.addEventListener('mouseleave', hideplacebox);
-        function showplacebox() {
-            placebox.style.display = 'block';
-        }
-        function hideplacebox() {
-            placebox.style.display = 'none';
-        }
-
-        const hotelbtn = document.getElementById('hotel');
-        const hotelmenu = document.getElementById('hotelbox');
-
-        hotelbtn.addEventListener('mouseenter', showhotelbox);
-        hotelbtn.addEventListener('mouseleave', hidehotelbox);
-        hotelmenu.addEventListener('mouseenter', showhotelbox);
-        hotelmenu.addEventListener('mouseleave', hidehotelbox);
-        function showhotelbox() {
-            hotelbox.style.display = 'block';
-        }
-        function hidehotelbox() {
-            hotelbox.style.display = 'none';
-        }
-
-        const foodbtn = document.getElementById('food');
-        const foodmenu = document.getElementById('foodbox');
-
-        foodbtn.addEventListener('mouseenter', showfoodbox);
-        foodbtn.addEventListener('mouseleave', hidefoodbox);
-        foodmenu.addEventListener('mouseenter', showfoodbox);
-        foodmenu.addEventListener('mouseleave', hidefoodbox);
-        function showfoodbox() {
-            foodbox.style.display = 'block';
-        }
-        function hidefoodbox() {
-            foodbox.style.display = 'none';
-        }
-    </script>
-    <!-- -------------------------------------------------------------------------------------------------------------- -->
 
 
 </body>
