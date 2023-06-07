@@ -1,373 +1,355 @@
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: white;
-
-  }
-
-  /* css reset */
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* css varaible */
-  :root {
-    --navbar-height: 20px;
-  }
-
-
-  #logo img {
-    margin-left: 7px;
-    margin-top: 3px;
-    height: 50px;
-    width: 50px;
-  }
-
-  #navbar {
-    display: flex;
-    position: fixed;
-    width: 100%
-  }
-
-
-  #navbar::before {
-    content: "";
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-    height: 60px;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.5;
-
-  }
-
-  #navbar ul {
-
-    display: flex;
-    align-items: center;
-  }
-
-  #navbar ul li {
-    list-style: none;
-    font-weight: 600;
-  }
-
-  #navbar ul li a {
-
-    display: block;
-    text-decoration: none;
-    padding: 3px 18px;
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
-  }
-
-  #navbar ul li a:hover {
-    color: rgb(190, 189, 189);
-    border-radius: 13px;
-  }
-
-  .para {
-
-    color: rgb(255, 255, 255);
-    padding: 8px 350px;
-
-  }
-
-  .para::before {
-    content: "";
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    left: 0;
-    top: 0;
-    height: 52%;
-    width: 100%;
-    z-index: -2;
-    opacity: 0.85;
-  }
-
-  #home {
-    display: flex;
-    color: rgb(71, 69, 69);
-    flex-direction: column;
-    height: 412px;
-    justify-content: center;
-    text-align: center;
-
-  }
-
-  #home::before {
-
-    content: "";
-    background-image: url('../img/b.jpg') ;
-    background-size: cover;
-    position: absolute;
-    transform: scalex(-1);
-    top: 0;
-    width: 100%;
-    height: 52%;
-    z-index: -1;
-    opacity: 0.4;
-  }
-
-  #home h1 {
-    text-align: center;
-    font-weight: bold;
-  }
-
-  #home p {
-    text-align: center;
-    /* font-weight: bold; */
-
-  }
-
-  .primary {
-    font-size: 2.8rem;
-    /* font-weight: bold; */
-  }
-
-  .btn {
-    align-self: center;
-    width: 100px;
-    height: 32px;
-    color: white;
-    background-color: brown;
-    /* border: 3px solid brown; */
-    justify-content: center;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 1rem;
-    padding: 3px;
-    cursor: pointer;
-  }
-
-  .btn:hover {
-    background-color: rgb(229, 63, 63);
-
-
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  .boxes {
-    display: flex;
-    padding: 20px;
-  }
-
-  #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 420px;
-  }
-
-  .box1 {
-
-    border: 3px solid brown;
-    height: 243px;
-    width: 179px;
-    justify-content: center;
-    text-align: center;
-    border-radius: 15px;
-    padding-left: 22px;
-    padding-right: 22px;
-    transition: all;
-    transition-duration: 0.3s;
-    overflow: hidden;
-
-    /* transform:scale(10px); */
-  }
-
-  .box1:hover {
-    height: 300px;
-    width: 680px;
-    background-color: rgb(169, 158, 157);
-    color: white;
-    cursor: pointer;
-  }
-
-  .box1 img {
-    height: 150px;
-    width: 200px;
-  }
-
-  .box2 {
-    margin-left: 50px;
-    border: 3px solid brown;
-    height: 179px;
-    width: 179px;
-    justify-content: center;
-    text-align: center;
-    border-radius: 15px;
-    padding: 30px 0px;
-    padding-left: 22px;
-    padding-right: 22px;
-    transition: all;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    cursor: pointer;
-  }
-
-  .box2:hover {
-    height: 245px;
-    width: 680px;
-    background-color: rgb(169, 158, 157);
-    color: white;
-  }
-
-  .box2 img {
-    height: 120px;
-    width: 150px;
-  }
-
-  .box3 {
-    margin-left: 50px;
-    border: 3px solid brown;
-    height: 199px;
-    width: 179px;
-    justify-content: center;
-    text-align: center;
-    border-radius: 15px;
-    padding: 20px 0px;
-    padding-left: 22px;
-    padding-right: 22px;
-    transition: all;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    cursor: pointer;
-  }
-
-  .box3:hover {
-    height: 260px;
-    width: 680px;
-    background-color: rgb(169, 158, 157);
-    color: white;
-
-  }
-
-  .box3 img {
-    height: 120px;
-    width: 120px;
-  }
-
-
-
-
-  .cleint-box {
-    display: flex;
-    padding: 20px;
-    flex-wrap: wrap;
-  }
-
-  #Clients {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    align-items: center;
-  }
-
-  #Clients::before {
-
-    content: "";
-    background-image: url('../img/f.jpg');
-    background-size: cover;
-    position: absolute;
-
-    width: 100%;
-    height: 53%;
-    z-index: -1;
-    opacity: 0.3;
-  }
-
-  .box4 {
-    height: 179px;
-    width: 179px;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    /* padding-left: 48px; */
-    padding-top: 35px;
-    transition-property: all;
-    transition-duration: 0.3s;
-    cursor: pointer;
-  }
-
-  .box4:hover {
-    height: 100px;
-    width: 200px;
-  }
-
-  .box4 img {
-    height: 80px;
-    width: 80px;
-    align-self: center;
-    padding-left: 88px;
-
-  }
-
-  .box5 {
-    /* margin-left: 50px; */
-    height: 179px;
-    width: 179px;
-    padding: 30px 0px;
-    padding: 38px;
-    padding-left: 37px;
-    transition-property: all;
-    transition-duration: 0.3s;
-    cursor: pointer;
-  }
-
-  .box5:hover {
-    height: 100px;
-    width: 200px;
-  }
-
-  .box5 img {
-    height: 90px;
-    width: 140px;
-    padding-left: 48px;
-  }
-
-  .box6 {
-    /* margin-left: 0px; */
-    height: 179px;
-    width: 179px;
-    padding: 30px 0px;
-    padding: 38px;
-    padding-left: 37px;
-    transition-property: all;
-    transition-duration: 0.3s;
-    cursor: pointer;
-  }
-
-  .box6:hover {
-    height: 100px;
-    width: 200px;
-  }
-
-  .box6 img {
-    height: 80px;
-    width: 80px;
-    padding-left: 48px;
-  }
-
-  .box7 {
-    /* margin-left: 50px; */
-    height: 179px;
-    width: 179px;
-    padding: 30px 0px;
-    transition-property: all;
-    transition-duration: 0.3s;
-    cursor: pointer;
-  }
-
-  .box7:hover {
-    height: 100px;
-    width: 200px;
-  }
-
-  .box7 img {
-    height: 110px;
-    width: 170px;
-  }
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* css varaible */
+:root {
+  --navbar-height: 20px;
+}
+
+#logo img {
+  margin-left: 7px;
+  margin-top: 3px;
+  height: 50px;
+  width: 50px;
+}
+
+#navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+#navbar::before {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-weight: 600;
+}
+
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 3px 18px;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+#navbar ul li a:hover {
+  color: rgb(190, 189, 189);
+  border-radius: 13px;
+}
+.active {
+  color: rgb(190, 189, 189);
+}
+.para {
+  color: rgb(255, 255, 255);
+  padding: 8px 350px;
+}
+
+.para::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  left: 0;
+  top: 0;
+  height: 52%;
+  width: 100%;
+  z-index: -2;
+  opacity: 0.9;
+}
+
+#home {
+  display: flex;
+  color: rgb(71, 69, 69);
+  flex-direction: column;
+  height: 412px;
+  justify-content: center;
+  text-align: center;
+}
+
+#home::before {
+  content: "";
+  background-image: url("../img/b.jpg");
+  background-size: cover;
+  position: absolute;
+  transform: scalex(-1);
+  top: 0;
+  width: 100%;
+  height: 52%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#home h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+#home p {
+  text-align: center;
+  /* font-weight: bold; */
+}
+
+.primary {
+  font-size: 2.8rem;
+  /* font-weight: bold; */
+}
+
+.btn {
+  align-self: center;
+  width: 100px;
+  height: 32px;
+  color: white;
+  background-color: brown;
+  /* border: 3px solid brown; */
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(229, 63, 63);
+}
+
+h1 {
+  text-align: center;
+}
+
+.boxes {
+  display: flex;
+  padding: 20px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 420px;
+}
+
+.box1 {
+  border: 3px solid brown;
+  height: 243px;
+  width: 179px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  padding-left: 22px;
+  padding-right: 22px;
+  transition: all;
+  transition-duration: 0.3s;
+  overflow: hidden;
+
+  /* transform:scale(10px); */
+}
+
+.box1:hover {
+  height: 300px;
+  width: 680px;
+  background-color: rgb(169, 158, 157);
+  color: white;
+  cursor: pointer;
+}
+
+.box1 img {
+  height: 150px;
+  width: 200px;
+}
+
+.box2 {
+  margin-left: 50px;
+  border: 3px solid brown;
+  height: 179px;
+  width: 179px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  padding: 30px 0px;
+  padding-left: 22px;
+  padding-right: 22px;
+  transition: all;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.box2:hover {
+  height: 245px;
+  width: 680px;
+  background-color: rgb(169, 158, 157);
+  color: white;
+}
+
+.box2 img {
+  height: 120px;
+  width: 150px;
+}
+
+.box3 {
+  margin-left: 50px;
+  border: 3px solid brown;
+  height: 199px;
+  width: 179px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px 0px;
+  padding-left: 22px;
+  padding-right: 22px;
+  transition: all;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.box3:hover {
+  height: 260px;
+  width: 680px;
+  background-color: rgb(169, 158, 157);
+  color: white;
+}
+
+.box3 img {
+  height: 120px;
+  width: 120px;
+}
+
+.cleint-box {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+#Clients {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+#Clients::before {
+  content: "";
+  background-image: url("../img/f.jpg");
+  background-size: cover;
+  position: absolute;
+
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.box4 {
+  height: 179px;
+  width: 179px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  /* padding-left: 48px; */
+  padding-top: 35px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.box4:hover {
+  height: 100px;
+  width: 200px;
+}
+
+.box4 img {
+  height: 80px;
+  width: 80px;
+  align-self: center;
+  padding-left: 88px;
+}
+
+.box5 {
+  /* margin-left: 50px; */
+  height: 179px;
+  width: 179px;
+  padding: 30px 0px;
+  padding: 38px;
+  padding-left: 37px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.box5:hover {
+  height: 100px;
+  width: 200px;
+}
+
+.box5 img {
+  height: 90px;
+  width: 140px;
+  padding-left: 48px;
+}
+
+.box6 {
+  /* margin-left: 0px; */
+  height: 179px;
+  width: 179px;
+  padding: 30px 0px;
+  padding: 38px;
+  padding-left: 37px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.box6:hover {
+  height: 100px;
+  width: 200px;
+}
+
+.box6 img {
+  height: 80px;
+  width: 80px;
+  padding-left: 48px;
+}
+
+.box7 {
+  /* margin-left: 50px; */
+  height: 179px;
+  width: 179px;
+  padding: 30px 0px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.box7:hover {
+  height: 100px;
+  width: 200px;
+}
+
+.box7 img {
+  height: 110px;
+  width: 170px;
+}

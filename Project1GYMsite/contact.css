@@ -1,188 +1,175 @@
-
 body {
-    color: aliceblue;
-    
-    background-color: rgb(8, 16, 11);
-    overflow: hidden;
-    font-family: 'Luckiest Guy', cursive;
+  color: aliceblue;
 
+  background-color: rgb(8, 16, 11);
+  overflow: hidden;
+  font-family: "Luckiest Guy", cursive;
 }
 
 .container .text {
-    position: relative;
-    color: rgb(90, 162, 38);
-    top: 150px;
-    left: 650px;
-    font-size: 80px;
-    font-weight: 600;
+  position: relative;
+  color: rgb(90, 162, 38);
+  top: 150px;
+  left: 650px;
+  font-size: 80px;
+  font-weight: 600;
 }
 
 .container .text.first-text {
-    color: white;
+  color: white;
 }
 
 .text.sec-text:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(8, 16, 11);
-    border-left: 4px solid rgb(90, 162, 38);
-    animation: animate 3s steps(12) infinite;
-
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(8, 16, 11);
+  border-left: 4px solid rgb(90, 162, 38);
+  animation: animate 3s steps(12) infinite;
 }
 
 @keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+  }
 
-    40%,
-    60% {
-        left: 100%;
-    }
-
-    100% {
-        left: 0%;
-    }
+  100% {
+    left: 0%;
+  }
 }
 .right {
-    position: fixed;
-    display: inline-block;
-    /* border: 2px solid red; */
-    right: 30px;
-    top: 2px;
+  position: fixed;
+  display: inline-block;
+  /* border: 2px solid red; */
+  right: 30px;
+  top: 2px;
 }
 
 .right img {
-    height: 70px;
-    filter: invert(100%);
-    /* border: 2px solid rgb(90, 162, 38); */
+  height: 70px;
+  filter: invert(100%);
+  /* border: 2px solid rgb(90, 162, 38); */
 }
 
 .right div {
-    font-family: 'Luckiest Guy', cursive;
-    line-height: 0px;
-    font-size: 18px;
+  font-family: "Luckiest Guy", cursive;
+  line-height: 0px;
+  font-size: 18px;
 }
-#fusion{
-   color:rgb(90, 162, 38) ;
+#fusion {
+  color: rgb(90, 162, 38);
 }
 
 .left {
-    position: fixed;
-    top: 6px;
-    left: 50px;
-    display: block;
-    width: 35%;
-    margin: 22px auto;
-    
+  position: fixed;
+  top: 6px;
+  left: 50px;
+  display: block;
+  width: 35%;
+  margin: 22px auto;
 
-    /* border: 2px solid green; */
+  /* border: 2px solid green; */
 }
 
 .bottom {
-    position: absolute;
-    bottom: 18px;
-    right: 10px;
-    display: inline-block;
-    /* border: 2px solid blue; */
-    position: fixed;
-
+  position: absolute;
+  bottom: 18px;
+  right: 10px;
+  display: inline-block;
+  /* border: 2px solid blue; */
+  position: fixed;
 }
 
 .btnA {
-    color: white;
-    background-color: transparent;
-    font-size: 14px;
-    font-family: 'Luckiest Guy', cursive;
-    padding: 5px 10px;
-    border-radius: 8px;
-    border-color: rgb(90, 162, 38);
-    cursor: pointer;
-
+  color: white;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: "Luckiest Guy", cursive;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border-color: rgb(90, 162, 38);
+  cursor: pointer;
 }
 
 .btnA:hover {
-    color: rgb(90, 162, 38);
-    border-color: #fff;
-    /* color: white; */
+  color: rgb(90, 162, 38);
+  border-color: #fff;
+  /* color: white; */
 }
 
 .btnB {
-    color: white;
-    font-size: 14px;
-    font-family: 'Luckiest Guy', cursive;
-    padding: 5px 10px;
-    border-radius: 8px;
-    background-color: rgb(90, 162, 38);
-    border-color: rgb(90, 162, 38);
-    cursor: pointer;
-
+  color: white;
+  font-size: 14px;
+  font-family: "Luckiest Guy", cursive;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: rgb(90, 162, 38);
+  border-color: rgb(90, 162, 38);
+  cursor: pointer;
 }
 
 .btnB:hover {
-    background-color: transparent;
-    color: white;
+  background-color: transparent;
+  color: white;
 }
 
 nav {
-    background-color: transparent;
-    border: transparent;
-    font-size: 16px;
-
+  background-color: transparent;
+  border: transparent;
+  font-size: 16px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: auto;
-    padding: 6px 20px;
-    border-radius: 8px;
-    border: green;
-
+  color: #fff;
+  text-decoration: none;
+  margin: auto;
+  padding: 6px 20px;
+  border-radius: 8px;
+  border: green;
 }
 
-nav a:hover{
-    background-color: transparent;
-    border: 2px solid rgb(90, 162, 38);        
-    border-radius: 8px;
-    color: white;
+nav a:hover {
+  background-color: transparent;
+  border: 2px solid rgb(90, 162, 38);
+  border-radius: 8px;
+  color: white;
 }
 nav a.active {
-    background-color: rgb(90, 162, 38);
-    border: 2px solid rgb(90, 162, 38);        
-    border-radius: 8px;
-    color: white;
+  background-color: rgb(90, 162, 38);
+  border: 2px solid rgb(90, 162, 38);
+  border-radius: 8px;
+  color: white;
 }
-.menu{
-    position: absolute;
-    display: inline-block;
-    top: 300px;
-    left: 460px;
-    height: 420px;
-    width: 700px;
-    text-align: center;
+.menu {
+  position: absolute;
+  display: inline-block;
+  top: 300px;
+  left: 460px;
+  height: 420px;
+  width: 700px;
+  text-align: center;
 }
 
-.menu button{
-    width: 500px;
-    height: 290px;
-    color: #fff;
-    background-color: rgb(8, 16, 11);
-    border: solid  rgb(255, 255, 255);
-    border-radius: 12px;
-    padding: 12px;
-    font-size: 18px;
+.menu button {
+  width: 500px;
+  height: 290px;
+  color: #fff;
+  background-color: rgb(8, 16, 11);
+  border: solid rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 18px;
 }
 /* .menu button:hover{
     border: 1px solid rgb(90, 162, 38);
 } */
-.menu input{
-    background-color: #ffffff;
-
+.menu input {
+  background-color: #ffffff;
 }
 input:hover {
-border: 1px solid rgb(90, 162, 38);
+  border: 1px solid rgb(90, 162, 38);
 }
-
-  
