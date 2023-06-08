@@ -32,22 +32,29 @@ footer::before{
   justify-content: center;
    text-align: center;
    padding: 30px;
+   font-size: 18px;
    
 }
 input[type=text]{
   text-decoration: none;
+  text-align: center;
+  font-size: 15px;
   border: none;
   background-color: transparent;
   color: white;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid ;
+  border-image: linear-gradient(to right, rgb(14, 205, 14), rgb(203, 142, 9), rgb(207, 115, 11))1;
   outline: none;
   
 }
 input[type=email]{
   text-decoration: none;
+  text-align: center;
   border: none;
+  font-size: 15px;
   background-color: transparent;
   color: white;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid ;
+  border-image: linear-gradient(to right, rgb(14, 205, 14), rgb(203, 142, 9), rgb(207, 115, 11))1;
   outline: none;
 }
