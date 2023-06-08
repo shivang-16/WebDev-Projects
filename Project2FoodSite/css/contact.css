@@ -37,14 +37,15 @@ input[type="text"] {
   text-align: center;
   font-size: 15px;
   border: none;
+  width: 200px;
   background-color: transparent;
   color: rgb(145, 192, 27);
   border-bottom: 1px solid;
   border-image: linear-gradient(
       to right,
-      rgb(7, 100, 17),
-      rgb(197, 255, 5),
-      rgb(9, 50, 24)
+      rgb(174, 223, 29),
+      rgb(47, 134, 6),
+      rgb(87, 60, 8)
     )
     1;
   outline: none;
@@ -52,17 +53,17 @@ input[type="text"] {
 input[type="email"] {
   text-decoration: none;
   text-align: center;
-
+  width: 200px;
   border: none;
   background-color: transparent;
   color: rgb(145, 192, 27);
   border-bottom: 1px solid;
   border-image: linear-gradient(
-      to right,
-      rgb(7, 100, 17),
-      rgb(197, 255, 5),
-      rgb(9, 50, 24)
-    )
-    1;
+    to right,
+    rgb(136, 83, 36),
+    rgb(158, 208, 32),
+    rgb(87, 60, 8)
+  )
+  1;
   outline: none;
 }
